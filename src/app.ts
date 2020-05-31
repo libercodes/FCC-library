@@ -8,8 +8,8 @@ import helmet from 'helmet'
 dotenv.config()
 
 const app: Application = express()
-app.use(cors({origin: '*'})); 
 app.use(helmet())
+app.use(cors({origin: '*'})); 
 //app.use(crossOriginMiddleware)
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
